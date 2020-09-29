@@ -1,5 +1,83 @@
-.favoriteRistorante__body {
-    max-width: 1170px;
-    padding: 0 10px;
+/*
+font-family: 'Dancing Script', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+.favorite-ristorante__body {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    
+}
+.favorite-ristorante__bg {
+    background-image: url(../img/FavoriteRistorante/BG_01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.favorite-ristorante__header {
+text-align: center;
+}
+.favorite-ristorante__header-logo::after {
+content: url(../img/FavoriteRistorante/logo_icon_01.svg);
+}
+.favorite-ristorante__header-logo::before {
+content: url(../img/FavoriteRistorante/logo_icon_02.svg);
+}
+.header-menu__items {
+    display: flex;
+    justify-content: space-evenly;
+    color: #c3c2c2;
+    font-family: 'Roboto', sans-serif;
+    max-width: 700px;
+    margin: 0 auto;
+}
+.header-menu__link {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+.favorite-ristorante__column {
+    text-align: center;
+    color: #fff;
+}
+.item-favorite-ristorante__title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 71px;
+    text-transform: uppercase;
+    margin:112px 0 26px;
+}
+.title__item{
+    display: block;
+}
+.item-favorite-ristorante__text {
+font-family: 'Raleway', sans-serif;
+font-size: 22px;
+font-weight: 400;
+line-height: 33px;
+margin:0 auto 30px;
+max-width: 914px;
+}
+.item-favorite-ristorante__link{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    letter-spacing: 0.075em;
+}
+.item-favorite-ristorante__link:hover {
+    cursor: pointer;
+}
+.item-favorite-ristorante__link_bg-size {
+    background-color: #e84545;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 46px;
     margin: 0 auto;
 }
