@@ -8,6 +8,7 @@ font-family: 'Roboto', sans-serif;
     background-image: url(../img/FavoriteRistorante/BG_01.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: scroll;
     height: 100%;
 }
 .container {
