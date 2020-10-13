@@ -4,18 +4,19 @@ font-family: 'Open Sans', sans-serif;
 font-family: 'Raleway', sans-serif;
 font-family: 'Roboto', sans-serif;
 */
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
 .favorite-ristorante__bg {
     background-image: url(../img/FavoriteRistorante/BG_01.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     height: 100%;
-}
-.container {
-    max-width: 1200px;
-    padding: 0 15px;
-    margin: 0 auto;
-    box-sizing: border-box;
 }
 .favorite-ristorante__body {
     padding-top: 42px;
@@ -150,4 +151,50 @@ font-family: 'Roboto', sans-serif;
 .item-favorite-ristorante__time:focus,
 .item-favorite-ristorante__people:focus {
     border-color: #e84545;
+}
+/* первый раздел Best in town */
+.best-in-town__bg {
+    background-color: #f6f6f6;
+}
+/* заголовок раздела */
+.best-in-town__title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 102px;
+    font-weight: 400;
+    text-align: center;
+}
+.best-in-town__text {
+    font-family: 'Dancing Script', cursive;
+    font-size: 45px;
+    font-weight: 400;
+    text-align: center;
+}
+/* лучшие блюда в городе */
+.best-in-town__row-column {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+.best-in-town__text-column {
+    max-width: 300px;
+}
+.item-best-in-town__title {
+    max-width: 220px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 30px auto 0;
+    color: #40403f;
+}
+.item-best-in-town__text {
+    max-width: 220px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 40px auto 0;
+    text-overflow: ellipsis;
+    color: #40403f;
+}
+.best-in-town__column {
+    height: 600px;
 }
