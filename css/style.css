@@ -96,7 +96,7 @@ font-family: 'Roboto', sans-serif;
 
 .favorite-ristorante__form {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: 36px 0;
 }
 .item-favorite-ristorante__date {
@@ -155,6 +155,7 @@ font-family: 'Roboto', sans-serif;
 /* первый раздел Best in town */
 .best-in-town__bg {
     background-color: #f6f6f6;
+    padding: 50px 50px 97px;
 }
 /* заголовок раздела */
 .best-in-town__title {
@@ -179,7 +180,7 @@ font-family: 'Roboto', sans-serif;
     max-width: 300px;
 }
 .item-best-in-town__title {
-    max-width: 220px;
+    max-width: 230px;
     font-family: 'Raleway', sans-serif;
     font-size: 22px;
     font-weight: 700;
@@ -187,14 +188,30 @@ font-family: 'Roboto', sans-serif;
     color: #40403f;
 }
 .item-best-in-town__text {
-    max-width: 220px;
+    display: -webkit-box;
+    max-width: 230px;
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
     font-weight: 400;
     margin: 40px auto 0;
     text-overflow: ellipsis;
     color: #40403f;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
-.best-in-town__column {
-    height: 600px;
+.best-in-town__column{
+    padding: 8px;
 }
+.best-in-town__column .item-best-in-town__text:hover {
+    display: block;
+    overflow: visible;
+    -webkit-box-orient: inherit;
+    text-overflow: unset;        
+}
+.best-in-town__column:hover {
+    background-color: #fff;
+    border: 1px solid #000000;
+    padding: 7px;
+}
+
