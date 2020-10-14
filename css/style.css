@@ -232,3 +232,23 @@ font-family: 'Roboto', sans-serif;
     top: 290px;
     left: 20px;
 }
+/*-------------------------- меню */
+.menu__bg {
+    background-color: #222c2e;
+}
+.menu__title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 75px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+}
+.menu__text {
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: #fff;
+    max-width: 925px;
+    text-align: center;
+    margin:  0 auto;
+}
