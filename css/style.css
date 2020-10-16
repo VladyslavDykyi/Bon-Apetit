@@ -175,6 +175,7 @@ font-family: 'Roboto', sans-serif;
     display: flex;
     justify-content: space-between;
     margin: 50px 0 30px;
+    height: 500px;
 }
 .best-in-town__text-column {
     max-width: 300px;
@@ -223,7 +224,7 @@ font-family: 'Roboto', sans-serif;
 .best-in-town__column:hover {
     background-color: #fff;
     border: 1px solid #000000;
-    padding: 7px;   
+    padding: 7px;
 }
 /* лучшие 3 блюда в городе расположение горячего предложения */
 .item-best-in-town__img-hot{
@@ -235,13 +236,22 @@ font-family: 'Roboto', sans-serif;
 /*-------------------------- меню */
 .menu__bg {
     background-color: #222c2e;
+    padding: 100px 0px;
 }
 .menu__title {
+    display: flex;
+    justify-content: center;
     font-family: 'Open Sans', sans-serif;
     font-size: 75px;
     font-weight: 700;
     color: #fff;
     text-align: center;
+    background-image: url(../img/Menu/Vector-Smart-Object-copy-3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 25px 0;
+    box-sizing: border-box;
+    margin-bottom: 50px;
 }
 .menu__text {
     font-family: 'Raleway', sans-serif;
