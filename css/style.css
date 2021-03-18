@@ -239,11 +239,8 @@ font-family: 'Roboto', sans-serif;
     padding: 100px 0px;
 }
 .menu__title {
-    display: flex;
-    justify-content: center;
     font-family: 'Open Sans', sans-serif;
     font-size: 75px;
-    font-weight: 700;
     color: #fff;
     text-align: center;
     background-image: url(../img/Menu/Vector-Smart-Object-copy-3.png);
@@ -260,5 +257,304 @@ font-family: 'Roboto', sans-serif;
     color: #fff;
     max-width: 925px;
     text-align: center;
-    margin:  0 auto;
+    margin: 0 auto 50px;
+}
+/* меню навигация*/
+.menu__nav-items {
+    
+}
+.menu__btn-nav{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px 250px;
+        margin-bottom: 50px;
+}
+.menu__btn-nav button {
+    text-decoration: none;
+    color: #7c9398;
+    width: 100px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    border: 1px solid;
+    justify-content: center;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: #222c2e;
+    cursor: pointer;
+    outline: 0;
+}
+/* меню--блюд ресторана*/
+.menu__row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu__restaurant {
+    width: 50%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.clearfix {
+    display: flex;
+    justify-content: space-between;
+}
+.menu__name, .menu__line, .menu__subtitle, .menu__price {
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none;
+    flex: 0 0 auto;
+}
+.menu__line {
+    max-width: 570px;
+    flex: 1 1 auto;
+    border-bottom: 1px dotted #fff;
+    position: relative;
+    bottom: 3px;
+    margin: 0 10px;
+}
+.menu__price {
+    color: #d8b57a;
+    font-weight: 700;
+}
+.menu__subtitle {
+    font-size: 14px;
+}
+/*-------------------------- Команда ресторана */
+.team__bg {
+    background-color: #fff;
+    padding: 100px 0px;
+}
+.team__title {
+    font-family: 'Releway', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #222c2e;
+}
+.team__title::after {
+    content: url(../img/TheTeam/Shape\ 12.png);
+    position: relative;
+    bottom: 17px;
+    left: 20px;
+}
+.team__title::before {
+    content: url(../img/TheTeam/Shape\ 12.png);
+    position: relative;
+    bottom: 17px;
+    right: 20px;
+}
+.team__text {
+    font-family: 'Dancing Script', cursive;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    color: #222c2e;
+    margin-bottom: 50px;
+}
+.team__box {
+    display: flex;
+    justify-content: space-between;
+}
+.team__box figure {
+    max-width: 270px;
+}
+.team-fig__art h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: #2d3033;
+    margin-top: 20px;
+}
+.team-fig__art p:first-of-type {
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: #e84545;
+    margin-top: 5px;
+}
+.team-fig__art p:last-of-type {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    color: #6c7279;
+    margin: 20px 0;
+}
+.team__social-box {
+    display: flex;
+    color: #c6cacc;
+}
+.team__social-box a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    margin-right: 5px;
+    border: 2px solid #c6cacc;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+/*-------------------------- новости ресторана */
+.news__bg {
+    background-color: #f6f6f6;
+    padding: 100px 0px;
+}
+.news__title {
+    font-family: 'Releway', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #222c2e;
+}
+.news__title::after {
+    content: url(../img/TheTeam/Shape\ 12.png);
+    position: relative;
+    bottom: 17px;
+    left: 20px;
+}
+.news__title::before {
+    content: url(../img/TheTeam/Shape\ 12.png);
+    position: relative;
+    bottom: 17px;
+    right: 20px;
+}
+.mews__text {
+    font-family: 'Dancing Script', cursive;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    color: #222c2e;
+}
+.news__box {
+    display: flex;
+    justify-content: space-between;
+}
+.news__box div {
+    color: #fff;
+    height: 350px;
+}
+.news__box div:first-of-type {
+    background-image: url(../img/News/picjumbo_03.jpg);
+    background-repeat: no-repeat;
+    flex-basis: 270px;
+}
+.news__box div {
+    background-image: url(../img/News/food-salad-healthy-vegetables1.jpg);
+    background-repeat: no-repeat;
+    flex-basis: 570px;
+}
+.news__box div:last-of-type {
+    background-image: url(../img/News/pexels-photo.jpg);
+    background-repeat: no-repeat;
+    flex-basis: 270px;
+}
+/*-------------------------- подвал */
+.footer__bg {
+    background-image: url(../img/food-salad-healthy-vegetables.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+}
+.footer__posotion {
+    display: flex;
+    justify-content: space-between;
+    padding: 150px 0;
+}
+.footer__firstBox {
+    flex: 0.44;
+}
+.footer__lastBox {
+    flex: 0.5;
+}
+.footer__firstBox p:last-of-type {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    padding-bottom: 15px;
+    color: #fff;
+}
+.footer__lastBox div p {
+    max-width: 300px;
+}
+.footer__title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 3px;
+    color: #fff;
+    padding-bottom: 7px;
+    box-sizing: border-box;
+    border-bottom: 2px solid #d8b57a;
+    display: inline;
+}
+.footer__text {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #fff;
+    text-decoration-line: none;
+    padding: 20px 0;
+}
+.footer__lastBox div form input {
+    width: 270px;
+    height: 45px;
+    border: none;
+    padding: 0 10px;
+}
+.footer__lastBox div form button {
+    width: 100px;
+    height: 45px;
+    border: none;
+    padding: 0;
+    position: absolute;
+    background-color: #e84545;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    letter-spacing: 0.075em;
+    color: #fff;
+    cursor: pointer;
+}
+.footer__contact {
+    padding-top: 20px;
+}
+.footer__contact a {
+    text-decoration-line: none;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 36px;
+}
+.footer__nav {
+    margin-top: 20px;
+}
+.footer__nav ul li a i {
+    margin-right: 10px;
+}
+.bottom {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 30px 0; 
+    text-align: center;
+    background-color: #252525;
+    color: #808080;
+}
+.bottom p span:first-of-type {
+    color: #e84545;
+}
+.bottom p span:last-of-type {
+    color: #d8b57a;
 }
