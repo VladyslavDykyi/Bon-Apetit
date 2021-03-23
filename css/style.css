@@ -101,32 +101,34 @@ font-family: 'Roboto', sans-serif;
 }
 .item-favorite-ristorante__date {
     width: 220px;
-    height: 56px;
+    height: 55px;
     border: 1px solid #c2c2c2;
     border-radius: 8px;
     box-sizing: border-box;
 }
 .item-favorite-ristorante__time {
     width: 220px;
-    height: 56px;
+    height: 55px;
     border: 1px solid #c2c2c2;
     border-radius: 8px;
     box-sizing: border-box;
 }
 .item-favorite-ristorante__people {
     width: 220px;
-    height: 56px;
+    height: 55px;
     border: 1px solid #c2c2c2;
     border-radius: 8px;
     box-sizing: border-box;
 }
 .item-favorite-ristorante__btn {
     width: 220px;
-    height: 56px;
+    height: 55px;
     background-color: #222c2e;
     border-radius: 8px;
     color: #fff;
     box-sizing: border-box;
+    border: none;
+    cursor: pointer;
 }
 .item-favorite-ristorante__date,
 .item-favorite-ristorante__time,
@@ -434,12 +436,14 @@ font-family: 'Roboto', sans-serif;
 .news__box {
     display: flex;
     justify-content: space-between;
-}
-.news__box div {
-    color: #fff;
-    height: 350px;
+    padding-top: 50px;
 }
 .news__box div:first-of-type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
     background-image: url(../img/News/picjumbo_03.jpg);
     background-repeat: no-repeat;
     flex-basis: 270px;
@@ -448,12 +452,54 @@ font-family: 'Roboto', sans-serif;
     background-image: url(../img/News/food-salad-healthy-vegetables1.jpg);
     background-repeat: no-repeat;
     flex-basis: 570px;
+    height: 350px;
+    box-shadow: 0 0 350px 0 black inset;
 }
 .news__box div:last-of-type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
     background-image: url(../img/News/pexels-photo.jpg);
     background-repeat: no-repeat;
     flex-basis: 270px;
 }
+.news__box div a {
+    font-family: 'Releway', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.2em;
+    color: #fff;
+    text-decoration-line: none;
+}
+.news__box div p {
+    font-family: 'Releway', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0.04em;
+    color: #fff;
+    margin: 0 30px;
+}
+.news__box2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    flex-direction: row-reverse;
+}
+.news__box2 span {
+    padding-top: 10px;
+    margin-right: 10px;
+}
+.news__box2 p:first-of-type {
+    margin: 0 10px;
+    padding-bottom: 10px;
+}
+
+
+
 /*-------------------------- подвал */
 .footer__bg {
     background-image: url(../img/food-salad-healthy-vegetables.png);
