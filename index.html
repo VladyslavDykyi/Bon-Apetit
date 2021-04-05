@@ -2,375 +2,79 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/resetCss.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:wght@700&family=Raleway:wght@400;500;600;700&family=Roboto&display=swap">
-
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BON Apetit</title>
+	<link rel="stylesheet" href="./css/resetCss.css">
+	<link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <!--шапка сайта первая при загрузке-->
-    <section class="favorite-ristorante">
-        <div class="favorite-ristorante__bg">
-            <div class="favorite-ristorante__body container">
-                <header class="favorite-ristorante__header">
-                    <!--лого сайта-->
-                    <div class="favorite-ristorante__header-logo">
-                        <a class="header-logo__link" href="#" title="Bon Apetit">
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                width="37" height="128" viewBox="0 0 37 128">
-                                <image fill="#ffffff" stroke="#ffffff" id="Vector_Smart_Object_copy_2"
-                                    data-name="Vector Smart Object copy 2" width="37" height="128"
-                                    xlink:href="data:img/png;base64,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" />
-                            </svg>
-                            <img class="header-logo__img" src="./img/FavoriteRistorante/logo.png" alt="">
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                width="37" height="128" viewBox="0 0 37 128">
-                                <image fill="#ffffff" stroke="#ffffff" id="Vector_Smart_Object_copy"
-                                    data-name="Vector Smart Object copy" width="37" height="128"
-                                    xlink:href="data:img/png;base64,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" />
-                            </svg>
-                        </a>
-                    </div>
-                    <!-- меню сайта -->
-                    <nav class="favorite-ristorante__header-menu">
-                        <ul class="header-menu__items">
-                            <a class="header-menu__link" href="#">
-                                <li>MENU</li>
-                            </a>
-                            <a class="header-menu__link" href="#">
-                                <li>OUR TEAM</li>
-                            </a>
-                            <a class="header-menu__link" href="#">
-                                <li>NEWS / BLOG</li>
-                            </a>
-                            <a class="header-menu__link" href="#">
-                                <li>CONTACT</li>
-                            </a>
-                        </ul>
-                    </nav>
-                </header>
-                <!-- статья о ресторане -->
-                <article class="favorite-ristorante__column">
-                    <h1 class="item-favorite-ristorante__title">Your Favorite<span class="title__item">one page
-                            ristorante</span></h1>
-                    <p class="item-favorite-ristorante__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Praesent commodo cursus magna
-                        vel scelerisque nisl consectetur et.</p>
-                    <a class="item-favorite-ristorante__link item-favorite-ristorante__link_bg-size" href="#">FIND OUT
-                        MORE</a>
-                </article>
-            </div>
-        </div>
-        <!-- контейнер с формой -->
-        <div class="favorite-ristorante__row container">
-            <form class="favorite-ristorante__form">
-                <input class="item-favorite-ristorante__date" type="date" name="date" required>
-                <input class="item-favorite-ristorante__time" type="time">
-                <select class="item-favorite-ristorante__people">
-                    <option><i class="far fa-user"></i> 1 People</option>
-                    <option><i class="far fa-user"></i> 2 People</option>
-                    <option><i class="far fa-user"></i> 3 People</option>
-                    <option><i class="far fa-user"></i> 4 People</option>
-                    <option><i class="far fa-user"></i> 5 People</option>
-                    <option><i class="far fa-user"></i> 6 People</option>
-                    <option><i class="far fa-user"></i> 7 People</option>
-                    <option><i class="far fa-user"></i> 8 People</option>
-                    <option><i class="far fa-user"></i> 9 People</option>
-                    <option><i class="far fa-user"></i> 10 People</option>
-                </select>
-                <button class="item-favorite-ristorante__btn">BOOK A TABLE</button>
-            </form>
 
-        </div>
-    </section>
-    <!-- первый раздел Best in town-->
-    <section class="best-in-town__bg">
-        <div class="container">
-            <!-- заголовок раздела -->
-            <h2 class="best-in-town__title">Best in town</h2>
-            <p class="best-in-town__text">try our new flavors</p>
-            <!-- лучшие блюда в городе  -->
-            <div class="best-in-town__row-column">
-                <div>
-                    <figure class="best-in-town__column">
-                        <div class="item-best-in-town__img-hot">
-                            <!-- горячее предложение -->
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                width="82" height="86" viewBox="0 0 82 86">
-                                <image id="HOT_" data-name="HOT !" width="82" height="86"
-                                    xlink:href="data:img/png;base64,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" />
-                            </svg>
-                        </div>
-                        <!-- фото блюда -->
-                        <img class="item-best-in-town__img"
-                            src="./img/BestInTown/food-pasta-tomato-theme-workspaces.jpg" alt="">
-                        <!-- текст блока лучшие блюда в городе -->
-                        <figcaption class="best-in-town__text-column">
-                            <h4 class="item-best-in-town__title">Seafood Mixed Pasta</h4>
-                            <p class="item-best-in-town__text text-wrapping">Vestibulum vitae purus sapien. Morbi
-                                luctus,
-                                erat et euis.
-                                Vestibulum vitae purus sapien. Morbi luctus, erat et euis.
-                                Vestibulum vitae purus sapien. Morbi luctus, erat et euis.
-                            </p>
-                            <p class="item-best-in-town__text item-best-in-town__text-second">
-                                Vestibulum vitae purus sapien. Morbi luctus, erat et euis.
-                                Vestibulum vitae purus sapien.
-                            </p>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div>
-                    <figure class="best-in-town__column">
-                        <!-- фото блюда -->
-                        <img class="item-best-in-town__img" src="./img/BestInTown/food-salad-healthy-lunch.jpg" alt="">
-                        <!-- текст блока лучшие блюда в городе -->
-                        <figcaption class="best-in-town__text-column">
-                            <h4 class="item-best-in-town__title">Seafood Mixed Pasta</h4>
-                            <p class="item-best-in-town__text text-wrapping">Vestibulum vitae purus sapien. Morbi
-                                luctus,
-                                erat et euis.
-                                Vestibulum vitae purus sapien. Morbi luctus, erat et euis.
-                                Vestibulum vitae purus sapien. Morbi luctus, erat et euis.
-                            </p>
-                            <p class="item-best-in-town__text item-best-in-town__text-second">
-                                Vestibulum vitae purus sapien. Morbi luctus, erat et euis.
-                                Vestibulum vitae purus sapien.
-                            </p>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div>
-                    <figure class="best-in-town__column">
-                        <!-- фото блюда -->
-                        <img class="item-best-in-town__img" src="./img/BestInTown/food-salad-restaurant-person.jpg"
-                            alt="">
-                        <!-- текст блока лучшие блюда в городе -->
-                        <figcaption class="best-in-town__text-column">
-                            <h4 class="item-best-in-town__title">Seafood Mixed Pasta</h4>
-                            <p class="item-best-in-town__text text-wrapping">Vestibulum vitae purus sapien. Morbi
-                                luctus,
-                                erat et euis.
-                                Vestibulum vitae purus sapien. Morbi luctus, erat et euis.
-                                Vestibulum vitae purus sapien. Morbi luctus, erat et euis.
-                            </p>
-                            <p class="item-best-in-town__text item-best-in-town__text-second">
-                                Vestibulum vitae purus sapien. Morbi luctus, erat et euis.
-                                Vestibulum vitae purus sapien.
-                            </p>
-                        </figcaption>
-                    </figure>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!---->
-    <section class="menu__bg">
-        <div class="container">
-            <h2 class="menu__title">MENU</h2>
-            <p class="menu__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna
-                vel scelerisque nisl consectetur et.</p>
-            <div class="menu__nav-items">
-                <ul class="menu__btn-nav">
-                    <li><button href="#">breakfast</button></li>
-                    <li><button href="#">drinks</button></li>
-                    <li><button href="#">pasta</button></li>
-                    <li><button href="#">pizza</button></li>
-                    <li><button>desert</button></li>
-                </ul>
-            </div>
-            <div class="menu__row">
-                <div class="lunch menu__restaurant">
-                    <span class="clearfix">
-                        <a class="menu__name" href="#">French Toast</a>
-                        <span class="menu__line"></span>
-                        <span class="menu__price">12$</span>
-                    </span>
-                    <span class="menu__subtitle">eggs, milk, bread, butter, syrup</span>
-                </div>
-                <div class="lunch menu__restaurant">
-                    <span class="clearfix">
-                        <a class="menu__name" href="#">Old Timer's Breakfast</a>
-                        <span class="menu__line"></span>
-                        <span class="menu__price">12$</span>
-                    </span>
-                    <span class="menu__subtitle">eggs, milk, bread, butter, syrup, butter, syrup</span>
-                </div>
-                <div class="lunch menu__restaurant">
-                    <span class="clearfix">
-                        <a class="menu__name" href="#">Double Meat Breakfast</a>
-                        <span class="menu__line"></span>
-                        <span class="menu__price">12$</span>
-                    </span>
-                    <span class="menu__subtitle">eggs, milk, bread, butter, syrup</span>
-                </div>
-                <div class="lunch menu__restaurant">
-                    <span class="clearfix">
-                        <a class="menu__name" href="#">Down Home Biscuit Breakfast</a>
-                        <span class="menu__line"></span>
-                        <span class="menu__price">12$</span>
-                    </span>
-                    <span class="menu__subtitle">eggs, milk, bread, butter, syrup</span>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="team__bg">
-        <div class="container">
-            <h2 class="team__title">THE TEAM</h2>
-            <p class="team__text">learn from thw best leaders</p>
-            <div class="team__box slider">
-                <figure>
-                    <img src="./img/TheTeam/Chef_34.jpg" />
-                    <figcaption>
-                        <article class="team-fig__art">
-                            <h3>Ruth Woods</h3>
-                            <p>MASTER CHEF</p>
-                            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
-                                massa justo sit amet risus.
-                                Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget
-                                urna mollis ornare vel eu leo.</p>
-                            <span class="team__social-box">
-                                <a><i class="fab fa-facebook-f"></i></a>
-                                <a><i class="fab fa-twitter"></i></a>
-                                <a><i class="fab fa-linkedin"></i></a>
-                            </span>
-                        </article>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="./img/TheTeam/100222119.jpg" />
-                    <figcaption>
-                        <article class="team-fig__art">
-                            <h3>Victoria Reed</h3>
-                            <p>MASTER CHEF</p>
-                            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
-                                massa justo sit amet risus.
-                                Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget
-                                urna mollis ornare vel eu leo.</p>
-                            <span class="team__social-box">
-                                <a><i class="fab fa-facebook-f"></i></a>
-                                <a><i class="fab fa-twitter"></i></a>
-                                <a><i class="fab fa-linkedin"></i></a>
-                            </span>
-                        </article>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="./img/TheTeam/PHBUSI-SER-037-028.jpg" />
-                    <figcaption>
-                        <article class="team-fig__art">
-                            <h3>Stan Valdez</h3>
-                            <p>BARMAN</p>
-                            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
-                                massa justo sit amet risus.
-                                Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget
-                                urna mollis ornare vel eu leo.</p>
-                            <span class="team__social-box">
-                                <a><i class="fab fa-facebook-f"></i></a>
-                                <a><i class="fab fa-twitter"></i></a>
-                                <a><i class="fab fa-linkedin"></i></a>
-                            </span>
-                        </article>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="./img/TheTeam/FIL_4875_SO.jpg" />
-                    <figcaption>
-                        <article class="team-fig__art">
-                            <h3>Beverly Little</h3>
-                            <p>WAITER</p>
-                            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
-                                massa justo sit amet risus.
-                                Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget
-                                urna mollis ornare vel eu leo.</p>
-                            <span class="team__social-box">
-                                <a><i class="fab fa-facebook-f"></i></a>
-                                <a><i class="fab fa-twitter"></i></a>
-                                <a><i class="fab fa-linkedin"></i></a>
-                            </span>
-                        </article>
-                    </figcaption>
-                </figure>
-            </div>
-        </div>
-    </section>
-    <section class="news__bg">
-        <div class="container">
-            <h2 class="news__title">NEWS</h2>
-            <p class="mews__text">bind the fresh E hat news form us</p>
-            <div class="news__box">
-                <div>
-                    <span><a href="">NEW FOOD MENU</a></span>
-                    <p>Global Temperature Records Just Got Crushed Again</p>
-                </div>
-                <div class="news__box2">
-                    <span><a href="">NEW FOOD MENU</a></span>
-                    <p>Global Temperature Records Just Got Crushed</p>
-                </div>
-                <div>
-                    <span><a href="">NEW & HOT</a></span>
-                    <p>Global Temperature Records Just Got Crushed Again</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer class="footer__bg">
-        <div class="container">
-            <div class="footer__posotion">
-                <div class="footer__firstBox">
-                    <h3 class="footer__title">ABOUT BON APETIT</h3>
-                    <p class="footer__text">Bon Apetit is an enchanting and easy-to-use parallax Restaurant WordPress
-                        theme that allows you to tell your story in a dynamic, narrative and enjoyable
-                        way, making it perfect for restaurants, bakeries, bars or coffee shops.</p>
-                    <p>BE SOCIAL</p>
-                    <div>
-                        <span class="team__social-box">
-                            <a><i class="fab fa-facebook-f"></i></a>
-                            <a><i class="fab fa-twitter"></i></a>
-                            <a><i class="fab fa-linkedin"></i></a>
-                        </span>
-                    </div>
-                </div>
-                <div class="footer__lastBox">
-                    <div>
-                        <h3 class="footer__title">OUR NEWSLETTER</h3>
-                        <p class="footer__text">To receive the latest news form us please subscribe to our newsletter.
-                        </p>
-                        <form>
-                            <input placeholder="enter your email here" />
-                            <button>SEND</button>
-                        </form>
-                    </div>
-                    <address class="footer__contact">
-                        <h3 class="footer__title">CONTACT</h3>
-                        <nav class="footer__nav">
-                            <ul>
-                                <li><a href="tel:+384441112233"><i class="fas fa-phone-alt"></i> +38 (333)333-22-11</a>
-                                </li>
-                                <li><a href="mailto:info@bonapetit.com"><i
-                                            class="fas fa-envelope"></i>info@bonapetit.com</a></li>
-                                <li><a href="https://goo.gl/maps/46xkCMncre584mw66" target="_blank"><i
-                                            class="fas fa-map-marker-alt"></i>New York
-                                        City</a></li>
-                            </ul>
-                        </nav>
-                    </address>
-                </div>
-            </div>
-        </div>
-        <div class="bottom">
-            <p>Made a layout for a portfolio 2021 Vladyslav Dykyi.</p>
-            <p>Created with <span>love</span> & <span>passion</span>.</p>
-        </div>
-    </footer>
-    <script src="https://kit.fontawesome.com/f6b5f64dfc.js" crossorigin="anonymous"></script>
+	<header class="">
+		<div class="">
+			<div class="">
+				<a href=""><img src="" alt=""></a>
+			</div>
+			<nav>
+				<div class="">
+					<span></span>
+				</div>
+				<ul class="">
+					<li><a class="" href="">menu</a></li>
+					<li><a class="" href="">our team</a></li>
+					<li><a class="" href="">mews / blog</a></li>
+					<li><a class="" href="">contact</a></li>
+				</ul>
+			</nav>
+			<h1 class="">your favorite<span>one page ristorante</span></h1>
+			<p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur
+				adipisicing elit. Ipsum, labore.</p>
+			<button class="">find out more</button>
+		</div>
+	</header>
+
+	<main>
+
+		<article>
+			<div>
+
+			</div>
+		</article>
+
+		<article>
+			<div>
+
+			</div>
+		</article>
+
+		<article>
+			<div>
+
+			</div>
+		</article>
+
+		<article>
+			<div>
+
+			</div>
+		</article>
+
+		<article>
+			<div>
+
+			</div>
+		</article>
+
+	</main>
+
+	<footer>
+		<div>
+
+		</div>
+	</footer>
+
 </body>
-
 
 </html>
