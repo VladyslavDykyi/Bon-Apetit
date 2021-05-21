@@ -1,0 +1,17 @@
+{
+    "version": 3,
+    "mappings": "AMAA,AAAA,OAAO,CAAC,EAAE,CAAC;EACV,gBAAgB,EAAE,OAAO;CACzB;;AACD,AAAA,OAAO,CAAC;EACP,KAAK,EAAE,IAAI;EACX,OAAO,EAAE,gBAAgB;CACzB;;AEND,AAAA,OAAO,CAAC,EAAE,CAAC;EACV,gBAAgB,EAAE,OAAO;EACzB,SAAS,EAAE,IAAI;CACf;;AACD,AAAA,OAAO,CAAC;EACP,KAAK,EAAE,IAAI;EACX,OAAO,EAAE,gBAAgB;CACzB",
+    "sources": [
+        "../scss/style.scss",
+        "../scss/_header.scss",
+        "../scss/_main.scss",
+        "../scss/_footer.scss",
+        "../scss/_contact.scss",
+        "../scss/_menu.scss",
+        "../scss/_newsblog.scss",
+        "../scss/_newsblogdetail.scss",
+        "../scss/_team.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
